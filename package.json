@@ -12,6 +12,7 @@
     "@vue/reactivity": "^3.4.21",
     "@vue/shared": "^3.4.21",
     "axios": "^1.4.0",
+    "echarts": "^5.5.0",
     "element-plus": "^2.6.3",
     "normalize.css": "^8.0.1",
     "pinia": "^2.1.3",

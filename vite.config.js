@@ -12,9 +12,22 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
+      dts: true, // or a custom path
+      include: [
+        /\.[tj]sx?$/, // .ts, .tsx, .js, .jsx
+        /\.vue$/,
+        /\.vue\?vue/, // .vue
+        /\.md$/, // .md
+
+      ],
+      imports: [
+        'vue',
+        'vue-router',
+      ],
       resolvers: [ElementPlusResolver()],
     }),
     Components({
+      dts: true,
       resolvers: [ElementPlusResolver()],
     }),
   ],
